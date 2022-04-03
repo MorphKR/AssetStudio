@@ -196,7 +196,7 @@ namespace AssetStudioGUI
                         case MonoBehaviour m_MonoBehaviour:
                             if (m_MonoBehaviour.m_Name == "" && m_MonoBehaviour.m_Script.TryGet(out var m_Script))
                             {
-                                assetItem.Text = m_Script.m_ClassName;
+                                assetItem.Text = $"{m_Script.m_Namespace}.{m_Script.m_ClassName} ({m_Script.m_AssemblyName})";
                             }
                             else
                             {

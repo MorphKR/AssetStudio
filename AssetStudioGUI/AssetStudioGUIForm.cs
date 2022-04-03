@@ -653,7 +653,7 @@ namespace AssetStudioGUI
             {
                 if (tabControl2.SelectedIndex == 1)
                 {
-                    dumpTextBox.Text = DumpAsset(lastSelectedItem.Asset);
+                    dumpTextBox.Text = lastSelectedItem.Text + Environment.NewLine + DumpAsset(lastSelectedItem.Asset);
                 }
                 if (enablePreview.Checked)
                 {
@@ -2040,7 +2040,7 @@ namespace AssetStudioGUI
         {
             if (tabControl2.SelectedIndex == 1 && lastSelectedItem != null)
             {
-                dumpTextBox.Text = DumpAsset(lastSelectedItem.Asset);
+                dumpTextBox.Text = lastSelectedItem.Text + Environment.NewLine + DumpAsset(lastSelectedItem.Asset);
             }
         }
 
